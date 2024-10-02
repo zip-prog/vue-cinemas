@@ -1,0 +1,84 @@
+@media (max-width: 1140px) {
+    .main-title{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 992px) {
+    .trailer{
+        background: linear-gradient(90deg, #def7ff70 0%, #f4fcff66 45.31%, rgba(255, 255, 255, 0) 100%);
+        text-align: center;
+    }
+    .trailer p{
+        margin: 30px auto;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger{
+        display: block;
+        visibility: visible;
+    }
+    .header__nav-list{
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,5,82,0.6671043417366946) 19%, rgba(9,9,121,0.7091211484593838) 35%, rgba(6,62,156,0.7203256302521008) 52%, rgba(4,112,189,0.6867121848739496) 68%, rgba(2,175,230,0.7175245098039216) 88%, rgba(0,212,255,0.7063200280112045) 100%);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transform: translateY(-200%);
+        transition: 900ms;
+    }
+    .burger:hover ~ .header__nav-list{
+        transform: translateY(0);
+    }
+    .series__grid{
+        grid-template-rows: repeat(4, 202px);
+    }
+    .series__grid-card:first-of-type{
+        grid-column: span 12;
+    }
+    .series__grid-card{
+        grid-column: span 6;
+    }
+}
+.header__nav-list a{
+    font-size: 18px;
+}
+@media (max-width: 476px) {
+    .trailer img{
+        width: 100%;
+    }
+    .trailer p{
+        line-height: 21px;
+        font-size: 18px;
+    }
+    .series__grid{
+        grid-template-rows: repeat(6, 202px);
+    }
+    .series__grid-card{
+        grid-column: span 12;
+    }
+    .series__main p{
+        line-height: 18px;
+    }
+    .series__main h3{
+        font-size: 26px;
+    }
+    .header__content h1{
+        font-size: 44px;
+    }
+    .btn{
+        display: inline;
+        padding: 8px 23px;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+    .header__content{
+        background: url('../images/headerBgadapt.jpg') center / cover;
+        background-color: rgba(7, 15, 25, 0.75);
+        background-blend-mode: multiply;
+    }
+}
